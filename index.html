@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fawaz Fragrance | Links</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* A beautiful, subtle gradient background inspired by fragrance and luxury */
+            background-color: #f5f5f5;
+            background-image: radial-gradient(circle at top right, #EAE0D5 0%, #D6C3B1 40%, #C6AC8F 100%);
+        }
+        .font-brand {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* The main card container */
+        .linktree-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(107, 79, 79, 0.2);
+        }
+
+        /* Custom animation for links appearing */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .link-item {
+            animation: fadeIn 0.5s ease-out forwards;
+            opacity: 0; /* Start hidden */
+            border: 2px solid transparent; /* Prepare for hover effect */
+        }
+        /* Stagger the animation for each link */
+        .link-item:nth-child(1) { animation-delay: 0.2s; }
+        .link-item:nth-child(2) { animation-delay: 0.3s; }
+        .link-item:nth-child(3) { animation-delay: 0.4s; }
+        .link-item:nth-child(4) { animation-delay: 0.5s; }
+        .link-item:nth-child(5) { animation-delay: 0.6s; }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="linktree-card w-full max-w-md mx-auto text-center rounded-2xl p-6 sm:p-8">
+
+        <!-- Header: Logo and Brand Name -->
+        <header class="mb-8 flex flex-col items-center">
+        
+            <img 
+                src="fawazfragrance.jpg" 
+                alt="Fawaz Fragrance Logo" 
+                class="w-32 h-32 object-contain mb-4 rounded-full shadow-lg"
+                onerror="this.onerror=null;this.src='https://placehold.co/128x128/6B4F4F/FFFFFF?text=FF';"
+            >
+            <h1 class="text-4xl font-brand font-bold text-[#5C4033]">Fawaz Fragrance</h1>
+            <p class="text-md font-brand text-[#6B4F4F] mt-1">Elegance Captured in Every Drop</p>
+        </header>
+
+        <!-- Main Content: Links -->
+        <main class="space-y-4">
+            <!-- WhatsApp Broadcast Channel -->
+            <a href="https://www.whatsapp.com/channel/0029VbAZzX30bIdegIuGtX2Y" target="_blank" rel="noopener noreferrer" class="link-item block bg-[#5C4033] text-white w-full py-3 px-5 rounded-lg shadow-md hover:shadow-xl hover:bg-white hover:text-[#5C4033] hover:border-[#5C4033] transform hover:-translate-y-1 transition-all duration-300 font-semibold text-lg">
+                WhatsApp Broadcast Channel
+            </a>
+
+            <!-- WhatsApp Number -->
+            <a href="https://api.whatsapp.com/send/?phone=919004263544&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="link-item block bg-[#5C4033] text-white w-full py-3 px-5 rounded-lg shadow-md hover:shadow-xl hover:bg-white hover:text-[#5C4033] hover:border-[#5C4033] transform hover:-translate-y-1 transition-all duration-300 font-semibold text-lg">
+                Chat on WhatsApp
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/fawazfragrance" target="_blank" rel="noopener noreferrer" class="link-item block bg-[#5C4033] text-white w-full py-3 px-5 rounded-lg shadow-md hover:shadow-xl hover:bg-white hover:text-[#5C4033] hover:border-[#5C4033] transform hover:-translate-y-1 transition-all duration-300 font-semibold text-lg">
+                Follow us on Instagram
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/people/Fawaz-Fragrance/61578977254156/" target="_blank" rel="noopener noreferrer" class="link-item block bg-[#5C4033] text-white w-full py-3 px-5 rounded-lg shadow-md hover:shadow-xl hover:bg-white hover:text-[#5C4033] hover:border-[#5C4033] transform hover:-translate-y-1 transition-all duration-300 font-semibold text-lg">
+                Find us on Facebook
+            </a>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-10">
+            <p class="text-sm font-semibold text-[#6B4F4F]">Thane, Maharashtra</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
+
